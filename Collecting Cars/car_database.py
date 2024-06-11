@@ -8,7 +8,6 @@ import auction_data as ad
 
 
 def find_car(make, model, des, submodel):
-    conn = psycopg.connect("dbname=cars user=postgres password=Sanuth0128")
     cur = conn.cursor()
 
     if submodel == '' and des == '':
